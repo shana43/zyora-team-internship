@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== Global Styles ===== */
 
 :root {
@@ -10,6 +11,9 @@
     --radius: 12px;
 }
 
+=======
+<link rel="stylesheet" href="../css/style.css">
+>>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +21,15 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: Arial, Helvetica, sans-serif;
     background: var(--background);
     color: var(--text);
+=======
+    font-family: Arial, sans-serif;
+    background-color:var(--bg);
+    color:var(--text);
+>>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
     line-height: 1.6;
 }
 
@@ -212,6 +222,7 @@ body.dark-mode button {
     color: white;
 }
 
+<<<<<<< HEAD
 
 /* BUTTON STYLE */
 
@@ -260,4 +271,114 @@ body.dark-mode input,
 body.dark-mode textarea {
     background-color: #222;
     color: white;
+=======
+section h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+/* Global Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Shared Header & Navigation */
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Shared Button Class */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Shared Card Class */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+}
+/* Global Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+/* Shared Header & Navigation */
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Shared Button Class */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Shared Card Class */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+>>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
 }
