@@ -1,61 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Builder</title>
+const form = document.getElementById("builderForm");
 
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-<header>
-    <h1>DevFolio</h1>
+        const fullName = document.getElementById("fullName");
+        const profession = document.getElementById("profession");
+        const email = document.getElementById("builderEmail");
+        const about = document.getElementById("about");
+        const skills = document.getElementById("skills");
+        const projects = document.getElementById("projects");
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="builder.html">Portfolio Builder</a>
-    </nav>
-</header>
+        if (fullName.value.trim() === "") {
+            alert("Please enter your name.");
+            fullName.focus();
+            return;
+        }
 
-<main>
-    <h2>Portfolio Builder</h2>
+        if (profession.value.trim() === "") {
+            alert("Please enter your profession.");
+            profession.focus();
+            return;
+        }
 
-    <form>
-        <label>Full Name</label><br>
-        <input type="text" placeholder="dharshana"><br><br>
+        if (email.value.trim() === "") {
+            alert("Please enter your email.");
+            email.focus();
+            return;
+        }
 
-        <label>Profession</label><br>
-        <input type="text" placeholder="Software Developer"><br><br>
+        if (about.value.trim() === "") {
+            alert("Please enter your About Me.");
+            about.focus();
+            return;
+        }
 
-        <label>Email</label><br>
-        <input type="email" placeholder="stqbrry@gmail.com"><br><br>
+        if (skills.value.trim() === "") {
+            alert("Please enter your skills.");
+            skills.focus();
+            return;
+        }
 
-        <label>About Me</label><br>
-        <textarea rows="5" placeholder="i am a btech student passionate about web development. i have experience in html, css, and javascript."></textarea><br><br>
+        if (projects.value.trim() === "") {
+            alert("Please enter your projects.");
+            projects.focus();
+            return;
+        }
 
-        <label>Skills</label><br>
-        <input type="text" placeholder="HTML, CSS, JavaScript"><br><br>
+        alert("Portfolio saved successfully!");
 
-        <label>Projects</label><br>
-        <textarea rows="4" placeholder="Currently working on my first web development project, DevFolio – Portfolio Builder. Looking forward to building more projects and expanding my portfolio."></textarea><br><br>
-
-        <label>GitHub Profile</label><br>
-        <input type="url" placeholder="https://github.com/shana43"><br><br>
-
-        <label>LinkedIn Profile</label><br>
-        <input type="url" placeholder="https://linkedin.com/in/dharshana-j"><br><br>
-
-        <button type="submit">Generate Portfolio</button>
-    </form>
-
-</main>
-
-<footer>
-    <p>© 2026 DevFolio. All Rights Reserved.</p>
-</footer>
-
-<script src="../js/builder.js"></script>
-
-</body>
-</html>
+        form.reset();
+        fullName.focus();
+    });
+}

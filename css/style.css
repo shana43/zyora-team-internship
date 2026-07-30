@@ -123,3 +123,141 @@ nav a {
 nav a:hover {
     color: var(--secondary);
 }
+/* Dark Mode */
+.dark-mode {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #1f2937;
+}
+
+.dark-mode nav a {
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: 1px solid #374151;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+    background-color: #374151;
+    color: #ffffff;
+    border: 1px solid #4b5563;
+}
+
+.dark-mode footer {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+.dark-mode a {
+    color: #4fc3f7;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #222;
+    color: white;
+    border: 1px solid #888;
+}
+/* DARK MODE */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode a {
+    color: #4fc3f7;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #222;
+    color: white;
+    border: 1px solid white;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: white;
+}
+
+
+/* BUTTON STYLE */
+
+#themeBtn {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333;
+    color: white;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode a {
+    color: cyan;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #222;
+    color: white;
+}
