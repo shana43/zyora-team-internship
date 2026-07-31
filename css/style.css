@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-/* ===== Global Styles ===== */
+/* ===== Global Reset ===== */
 
-:root {
-    --primary: #4f46e5;
-    --secondary: #06b6d4;
-    --background: #f8fafc;
-    --white: #ffffff;
-    --text: #1f2937;
-    --border: #e5e7eb;
-    --radius: 12px;
-}
-
-=======
-<link rel="stylesheet" href="../css/style.css">
->>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
 * {
     margin: 0;
     padding: 0;
@@ -21,364 +7,220 @@
 }
 
 body {
-<<<<<<< HEAD
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--background);
-    color: var(--text);
-=======
-    font-family: Arial, sans-serif;
-    background-color:var(--bg);
-    color:var(--text);
->>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
 
-h1, h2, h3 {
-    margin-bottom: 15px;
-}
+/* ===== Header ===== */
 
-p {
-    margin-bottom: 15px;
-}
-
-button,
-.btn {
-    background: var(--primary);
+header {
+    background: #0f172a;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: var(--radius);
-    cursor: pointer;
+    padding: 25px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
     transition: 0.3s;
 }
 
-button:hover,
-.btn:hover {
-    background: var(--secondary);
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* ===== Main Sections ===== */
+
+main,
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* ===== Home/Profile ===== */
+
+#home {
+    text-align: center;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+
+/* ===== Skills ===== */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+
+/* ===== Projects ===== */
+
+#projects div {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #2563eb;
+    background: #f1f5f9;
+}
+
+
+/* ===== Forms ===== */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ===== Buttons ===== */
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* ===== Links ===== */
+
+a {
+    color: #2563eb;
+}
+
+
+/* ===== Responsive Design ===== */
+
+@media(max-width:700px){
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main,
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+/* API Cards */
+
+#apiData {
+    margin-top: 30px;
+}
+
+#portfolioList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: var(--radius);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin: 15px 0;
-}
-
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-header {
-    background: var(--primary);
-    color: white;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--secondary);
-}
-header {
-    background: var(--primary);
-    color: white;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--secondary);
-}
-/* Dark Mode */
-.dark-mode {
-    background-color: #111827;
-    color: #ffffff;
-}
-
-.dark-mode header {
-    background-color: #1f2937;
-}
-
-.dark-mode nav a {
-    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .dark-mode .card {
-    background-color: #1f2937;
-    color: #ffffff;
-    border: 1px solid #374151;
-}
-
-.dark-mode input,
-.dark-mode textarea,
-.dark-mode select {
-    background-color: #374151;
-    color: #ffffff;
-    border: 1px solid #4b5563;
-}
-
-.dark-mode footer {
-    background-color: #1f2937;
-    color: #ffffff;
-}
-.dark-mode {
-    background-color: #121212;
+    background: #2b2b2b;
     color: white;
 }
 
-.dark-mode header,
-.dark-mode footer {
-    background-color: #1f1f1f;
+#loading {
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.dark-mode a {
-    color: #4fc3f7;
-}
-
-.dark-mode button {
-    background-color: #333;
-    color: white;
-    border: 1px solid white;
-}
-
-.dark-mode input,
-.dark-mode textarea {
-    background-color: #222;
-    color: white;
-    border: 1px solid #888;
-}
-/* DARK MODE */
-
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-body.dark-mode header {
-    background-color: #1e1e1e;
-}
-
-body.dark-mode footer {
-    background-color: #1e1e1e;
-}
-
-body.dark-mode a {
-    color: #4fc3f7;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-    background-color: #222;
-    color: white;
-    border: 1px solid white;
-}
-
-body.dark-mode button {
-    background-color: #333;
-    color: white;
-}
-
-<<<<<<< HEAD
-
-/* BUTTON STYLE */
-
-#themeBtn {
-    padding: 8px 15px;
-    cursor: pointer;
-}
-body.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background-color: #222;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-    background-color: #333;
-    color: white;
-}
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-body.dark-mode header {
-    background-color: #222;
-}
-
-body.dark-mode footer {
-    background-color: #222;
-}
-
-body.dark-mode a {
-    color: cyan;
-}
-
-body.dark-mode button {
-    background-color: #333;
-    color: white;
-}
-
-body.dark-mode input,
-body.dark-mode textarea {
-    background-color: #222;
-    color: white;
-=======
-section h3 {
-    color: #2563eb;
-    margin-bottom: 10px;
-}
-/* Global Reset & Base Styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9fafb;
-  color: #1f2937;
-  line-height: 1.6;
-}
-
-/* Shared Header & Navigation */
-header {
-  background-color: #2563eb;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
-
-/* Shared Button Class */
-.btn {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  background-color: #1d4ed8;
-}
-
-/* Shared Card Class */
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  margin: 16px 0;
-}
-/* Global Reset & Base Styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9fafb;
-  color: #1f2937;
-  line-height: 1.6;
-}
-/* Shared Header & Navigation */
-header {
-  background-color: #2563eb;
-  color: white;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
-
-/* Shared Button Class */
-.btn {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  background-color: #1d4ed8;
-}
-
-/* Shared Card Class */
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  margin: 16px 0;
->>>>>>> b14e5f1d66696b39e952633e44010b68a9054735
+#error {
+    color: red;
+    font-weight: bold;
 }

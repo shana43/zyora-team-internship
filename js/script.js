@@ -75,31 +75,38 @@ if (localStorage.getItem("theme") === "dark") {
     }
 
 }
-const themeBtn = document.getElementById("themeBtn");
+// Fetch sample portfolio data
 
-if (themeBtn) {
-    themeBtn.onclick = function () {
-        document.body.classList.toggle("dark-mode");
+const loading = document.getElementById("loading");
+const error = document.getElementById("error");
+const portfolioList = document.getElementById("portfolioList");
 
-        if (document.body.classList.contains("dark-mode")) {
-            themeBtn.innerHTML = "☀️ Light Mode";
-        } else {
-            themeBtn.innerHTML = "🌙 Dark Mode";
-        }
-    };
-}
-const themeBtn = document.getElementById("themeBtn");
+if (loading && error && portfolioList) {
 
-if (themeBtn) {
-    themeBtn.addEventListener("click", function () {
+    loading.style.display = "block";
 
-        document.body.classList.toggle("dark-mode");
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to fetch data");
+            }
+            return response.json();
+        })
+        .then(data => {
+            loading.style.display = "none";
 
-        if (document.body.classList.contains("dark-mode")) {
-            themeBtn.textContent = "☀️ Light Mode";
-        } else {
-            themeBtn.textContent = "🌙 Dark Mode";
-        }
+            data.slice(0, 5).forEach(user => {
+                portfolioList.innerHTML += `
+                    <div class="card">
+                        <h3>${user.name}</h3>
+                        <p>${user.email}</p>
+                    </div>
+                `;
+            });
+        })
+        .catch(() => {
+            loading.style.display = "none";
+            error.textContent = "Unable to load portfolio data.";
+        });
 
-    });
 }
