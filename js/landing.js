@@ -3,7 +3,7 @@
 // ==============================
 
 const text =
-"AI & Data Science Student • Web Developer • Lifelong Learner";
+"AI & Data Science Students • Web Developer •";
 
 let index = 0;
 
