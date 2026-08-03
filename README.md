@@ -1,22 +1,33 @@
-# DevFolio – Portfolio Builder
+# 🌐 DevFolio – Portfolio Builder
 
-## 📌 Project Overview
+## 📖 Project Overview
 
-DevFolio is a responsive Portfolio Builder web application that helps users create a professional portfolio without writing code. Users simply fill in their details, and the portfolio preview updates instantly. The application supports multiple themes, stores data locally, and provides a print-friendly portfolio.
+DevFolio is a responsive Portfolio Builder web application developed as part of our internship project. It enables users to create a professional portfolio by entering their personal details through a simple form. The application provides a clean user interface, supports light and dark mode, and is fully responsive across different devices.
+
+---
+
+## 🎯 Objectives
+
+- Build a responsive multi-page website.
+- Create a portfolio builder using HTML, CSS, and JavaScript.
+- Provide a modern and user-friendly interface.
+- Practice Git, GitHub, and collaborative development.
+- Deploy the project using Vercel.
 
 ---
 
 ## ✨ Features
 
-- Live portfolio preview
-- Portfolio builder form
-- Responsive design
-- Light & Dark mode
-- Three switchable color themes
-- Auto-save using Local Storage
-- Print-friendly portfolio view
-- Clean and modern UI
-- About, Projects and Contact pages
+- 🏠 Modern Landing Page
+- 👤 About Page
+- 💼 Projects Page
+- 📞 Contact Page
+- 🛠️ Portfolio Builder Form
+- 🌙 Dark & Light Mode
+- 📱 Responsive Design
+- 🎨 Animated UI Components
+- 💾 Local Storage Support
+- 🖨️ Portfolio Generation
 
 ---
 
@@ -26,6 +37,9 @@ DevFolio is a responsive Portfolio Builder web application that helps users crea
 - CSS3
 - JavaScript (ES6)
 - Local Storage API
+- Git
+- GitHub
+- Vercel
 
 ---
 
@@ -33,83 +47,111 @@ DevFolio is a responsive Portfolio Builder web application that helps users crea
 
 ```
 DevFolio/
-│── index.html
-│── pages/
-│   ├── about.html
-│   ├── builder.html
-│   ├── projects.html
-│   └── contact.html
-│── css/
+│
+├── index.html
+├── README.md
+│
+├── css/
 │   └── style.css
-│── js/
+│
+├── js/
 │   ├── script.js
 │   └── builder.js
-└── README.md
+│
+└── pages/
+    ├── about.html
+    ├── builder.html
+    ├── contact.html
+    └── projects.html
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run the Project
 
 1. Clone the repository.
 2. Open the project in VS Code.
 3. Open `index.html` in your browser.
-4. Navigate to the Portfolio Builder page.
-5. Fill in the form to generate your portfolio.
-
----
-
-## 🎯 Key Functionalities
-
-- Real-time portfolio generation
-- Theme switching
-- Local data storage
-- Mobile-friendly layout
-- Professional user interface
-
----
-
-## 👥 Team
-
-**Team 10**
-
-- Ankit Shami E V
-- Dhershane J
-
----
-
-## 📸 Screenshots
-
-Add screenshots of:
-- Home Page
-- Portfolio Builder
-- Live Preview
-- About Page
-- Projects Page
-- Contact Page
-
----
+4. Navigate through the pages using the navigation menu.
+5. Open the Portfolio Builder page and generate a portfolio.
 
 ## 🌐 Live Demo
 
-Paste your Vercel deployment link here.
+**Vercel Deployment**
 
-Example:
-
-https://your-project.vercel.app
+https://zyora-team-internship.vercel.app/
 
 ---
 
-## 📖 Future Improvements
+# 👨‍💻 Team Contributions
+
+## Dharshana J
+
+- Designed and developed the Landing Page.
+- Developed the Portfolio Builder form.
+- Implemented responsive layouts.
+- Added dark and light mode functionality.
+- Designed and improved the About page.
+- Designed the Projects page.
+- Developed the Contact page.
+- Tested website responsiveness.
+- Fixed UI issues and improved overall design.
+- Assisted in deployment using Vercel.
+
+---
+
+## Anlat Shami E.V
+
+- Assisted in planning the project structure.
+- Worked on HTML page development.
+- Supported CSS styling and layout improvements.
+- Assisted in JavaScript integration.
+- Tested navigation and website functionality.
+- Helped identify and fix bugs.
+- Verified responsive design.
+- Assisted with GitHub repository management.
+- Helped prepare project documentation and README.
+
+---
+
+## 📌 Learning Outcomes
+
+Through this project we learned:
+
+- HTML5 page structuring
+- CSS3 layouts and animations
+- Responsive Web Design
+- JavaScript DOM manipulation
+- Local Storage
+- Git & GitHub collaboration
+- Website deployment using Vercel
+- Team collaboration and project management
+
+---
+
+## 🔮 Future Enhancements
 
 - Export portfolio as PDF
-- Multiple portfolio templates
-- Drag-and-drop customization
+- Portfolio templates
 - Profile image upload
+- Drag-and-drop customization
 - Backend database integration
+- User authentication
+- Multiple portfolio themes
 
 ---
 
 ## 📄 License
 
-This project was developed for an internship learning program and is intended for educational purposes.
+This project was developed as part of an internship program for learning and educational purposes.
+
+---
+
+## 👥 Team
+
+**Team Name:** DevFolio
+
+**Members:**
+
+- Anlat Shami E.V
+- Dharshana J
